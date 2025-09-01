@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_image_edit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/round"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="32dp" />
+
+        <!-- Change Picture Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_change_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Picture"
+            android:textColor="@color/background"
+            android:backgroundTint="@color/primary_color"
+            android:layout_marginTop="12dp"
+            app:cornerRadius="8dp" />
+
+        <!-- Name -->
+        <TextView
+            android:text="Full Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="24dp" />
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="Enter your name"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textPersonName" />
+
+        <!-- Email -->
+        <TextView
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="Enter your email"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Age / Gender -->
+        <TextView
+            android:text="Age / Gender"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_age_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="e.g. 26 / Female"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Skin Type -->
+        <TextView
+            android:text="Skin Type"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_skin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="e.g. Normal to Dry"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Skin Concerns -->
+        <TextView
+            android:text="Skin Concerns"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_concerns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="e.g. Acne, Pigmentation"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Current Routine -->
+        <TextView
+            android:text="Current Routine"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_routine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="Morning/Evening routine"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Allergies -->
+        <TextView
+            android:text="Allergies / Sensitivities"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_allergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="e.g. Fragrance, Alcohol"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Favorite Brands -->
+        <TextView
+            android:text="Favorite Brands"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/edit_brands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@color/text_color"
+            android:hint="e.g. CeraVe, The Ordinary"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Save Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/background"
+            android:backgroundTint="@color/button_color"
+            android:layout_marginTop="32dp"
+            android:padding="12dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

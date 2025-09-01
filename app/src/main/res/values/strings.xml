@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="app_name">Skin Care</string>
+    <string name="logo">App logo</string>
+    <string name="login_label">Log In</string>
+    <string name="register_label">Sign In</string>
+    <string name="login">Welcome To Your SkinCare</string>
+    <string name="email">Email :</string>
+    <string name="username">User Name : </string>
+    <string name="password">Password :</string>
+    <string name="input_your_valid_email_address">Enter your valid email address</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_password_again">Re-enter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="send">LOGIN</string>
+    <string name="register"> REGISTER </string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="have_an_account"> Have an account? </string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="dry_skin">FIND THE RIGHT SKIN CARE </string>
+    <string name="try_again"> TRY AGAIN </string>
+    <string name="oily_skin">Oily Skin</string>
+    <string name="is_it_your_skin_type">Is it your skin type?</string>
+    <string name="your_skin_is_oily">Your skin is oily and you may experience excess shine. The right skincare products will balance your skin and help it appear smoother and clearer..</string>
+    <string name="oily">Oily Skin</string>
+    <string name="app_logo">App Logo</string>
+    <string name="normal_skin">Normal Skin</string>
+    <string name="skin_normal">You have normal skin. The right skincare products will keep your skin looking healthy, smooth, hydrated and protected from environmental stressors.</string>
+    <string name="skin_is_normal">Normal Skin</string>
+    <string name="combination_skin">Some areas of your face are dry or normal while other areas are oily. With the right products your skin will become more balanced and appear smoother and clearer.</string>
+    <string name="combined_skin">Combination Skin</string>
+    <string name="skin_is_combination">Combination Skin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_skin_fragment">Hello skin fragment</string>
+    <string name="hello_home_fragment">Hello home fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_profile_fragment">Hello profile fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_notify_fragment">Hello notify fragment</string>
+
+    <string name="des1">BackArrow : </string>
+    <string name="des2">Setting : </string>
+    <string name="pigment_spots">Pigment Spots</string>
+    <string name="sensitive_skin">Sensitive Skin</string>
+    <string name="acne">Acne</string>
+    <string name="black_heads">Black Heads</string>
+    <string name="skin_problem">Skin Problem</string>
+    <string name="skin_problem_solution">Skin Problem Solution</string>
+    <string name="back">Back Button Arrow</string>
+    <string name="notification">Notification</string>
+    <string name="skin">Don’t forget to apply your SkinGlow serum today for healthy, radiant skin.\n\nStay consistent — your skin deserves the best! </string>
+    <string name="it_s_time_to_glow">It’s time to glow! </string>
+    <string name="don_t_forget_to_apply_your_skinglow_serum_today_for_healthy_radiant_skin_n_nstay_consistent_your_skin_deserves_the_best">Don’t forget to apply your SkinGlow serum today for healthy, radiant skin.\n\nStay consistent — your skin deserves the best! </string>
+    <string name="settings_for">Settings</string>
+    <string name="backbtn">Back</string>
+    <string name="image">TODO</string>
+    <string name="anotherimage">TODO</string>
+    <string name="dot_image">TODO</string>
+    <string name="retinolimage">TODO</string>
+
+    <string name="heart">HeartLogo</string>
+    <string name="bag">BagLogo</string>
+    <string name="btn_do_not_use"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

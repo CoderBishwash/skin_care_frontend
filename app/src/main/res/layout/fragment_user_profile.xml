@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:src="@drawable/back" />
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/round"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="32dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jane Doe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="16dp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="janedoe@email.com"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:alpha="0.8"
+            android:layout_marginTop="4dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/primary_color"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Profile Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Age & Gender -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Age / Gender"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_age_gender"
+                android:text="26 / Female"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Skin Type -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Skin Type"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_skin_type"
+                android:text="Normal to Dry"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Skin Concerns -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Skin Concerns"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_concerns"
+                android:text="Acne, Pigmentation"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Current Routine -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Current Routine"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_routine"
+                android:text="Morning: Cleanser, Vitamin C, Sunscreen\nEvening: Cleanser, Moisturizer, Retinol"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Allergies -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Allergies / Sensitivities"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_allergies"
+                android:text="Fragrance, Alcohol-based products"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Favorite Brands -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Favorite Brands"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primary_color" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_brands"
+                android:text="CeraVe, The Ordinary, La Roche-Posay"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+        <!-- Edit Profile Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/background"
+            android:backgroundTint="@color/button_color"
+            android:layout_marginTop="32dp"
+            android:padding="12dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

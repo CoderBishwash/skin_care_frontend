@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".NotifyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Settings Button -->
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_settings_24"
+        android:contentDescription="@string/settings_for"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- First Notification Card -->
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/curved_rectangle"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/anotherimage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/menuIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/dot_image"
+            app:tint="@color/white"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image1"
+            android:layout_toStartOf="@id/menuIcon1"
+            android:layout_alignTop="@id/image1"
+            android:layout_marginStart="12dp"
+            android:text="Revive Your Skin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title1"
+            android:layout_alignStart="@id/title1"
+            android:layout_marginTop="4dp"
+            android:text="A fast-absorbing serum that reduces fine lines, boosts brightness, and restores your skin’s youthful glow."
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!-- Second Notification Card -->
+    <RelativeLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/curved_rectangle"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image2" />
+
+        <ImageView
+            android:id="@+id/menuIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image2"
+            android:layout_toStartOf="@id/menuIcon2"
+            android:layout_alignTop="@id/image2"
+            android:layout_marginStart="12dp"
+            android:text="Lightweight Care, Powerful Results"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title2"
+            android:layout_alignStart="@id/title2"
+            android:layout_marginTop="4dp"
+            android:text="Enriched with vitamins and antioxidants, it nourishes, hydrates, and protects your skin against daily stress and pollution."
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
