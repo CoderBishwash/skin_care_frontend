@@ -132,39 +132,6 @@
                 android:textColor="@color/text_color"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Allergies -->
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Allergies / Sensitivities"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/primary_color" />
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:id="@+id/profile_allergies"
-                android:text="Fragrance, Alcohol-based products"
-                android:textSize="18sp"
-                android:textColor="@color/text_color"
-                android:layout_marginBottom="16dp" />
-
-            <!-- Favorite Brands -->
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Favorite Brands"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/primary_color" />
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:id="@+id/profile_brands"
-                android:text="CeraVe, The Ordinary, La Roche-Posay"
-                android:textSize="18sp"
-                android:textColor="@color/text_color"
-                android:layout_marginBottom="16dp" />
 
         </LinearLayout>
 

@@ -19,6 +19,8 @@ import com.example.skincare.model.Doctor;
 import com.example.skincare.model.Product;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
+import com.google.android.material.shape.CornerFamily;
+import com.google.android.material.shape.ShapeAppearanceModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +64,7 @@ public class ProductDetailsFragment extends Fragment {
         btnBack.setOnClickListener(v -> getParentFragmentManager().popBackStack());
 
         // Retrieve product data from arguments
+        List<Doctor> doctors = new ArrayList<>();
         if (getArguments() != null) {
             product = new Product(
                     getArguments().getInt("id"),
@@ -75,8 +78,14 @@ public class ProductDetailsFragment extends Fragment {
                     getArguments().getString("incompatibleProducts"),
                     getArguments().getString("image"),
                     getArguments().getString("recommendedFor"),
-                    new ArrayList<>() // doctors can be passed separately if needed
+                    new ArrayList<>()
             );
+
+            // ----------------------- UPDATED -----------------------
+            // Retrieve doctors list passed as Serializable
+            List<Doctor> passedDoctors = (List<Doctor>) getArguments().getSerializable("recommendedByDoctorsList");
+            if (passedDoctors != null) doctors.addAll(passedDoctors);
+            // -------------------------------------------------------
         }
 
         if (product != null) {
@@ -108,15 +117,20 @@ public class ProductDetailsFragment extends Fragment {
                     chip.setText(item.trim());
                     chip.setTextColor(Color.WHITE);
                     chip.setChipBackgroundColorResource(R.color.primary_color);
-                    chip.setChipCornerRadius(16f);
+                    // Use ShapeAppearanceModel to set corner radius
+                    ShapeAppearanceModel shapeModel = chip.getShapeAppearanceModel()
+                            .toBuilder()
+                            .setAllCorners(CornerFamily.ROUNDED, 16f) // 16f is in pixels
+                            .build();
+                    chip.setShapeAppearanceModel(shapeModel);
                     chip.setClickable(false);
                     chipGroupIncompatible.addView(chip);
                 }
             }
 
-            // Populate recommended by doctors (optional: pass doctors list separately)
-            List<Doctor> doctors = product.getRecommendedByDoctors();
-            if (doctors != null && !doctors.isEmpty()) {
+            // ----------------------- UPDATED -----------------------
+            // Populate recommended by doctors
+            if (!doctors.isEmpty()) {
                 StringBuilder names = new StringBuilder();
                 for (Doctor d : doctors) {
                     if (names.length() > 0) names.append(", ");
@@ -126,6 +140,7 @@ public class ProductDetailsFragment extends Fragment {
             } else {
                 tvRecommendedBy.setText(""); // hide if none
             }
+            // -------------------------------------------------------
         }
     }
 }

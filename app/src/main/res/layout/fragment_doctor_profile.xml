@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_doctor_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back button -->
+        <ImageButton
+            android:id="@+id/btn_back_doctor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:tint="@color/white"
+            android:scaleType="center"
+            android:src="@drawable/back"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/primary_color"
+            android:contentDescription="Back" />
+
+        <!-- Doctor image -->
+        <ImageView
+            android:id="@+id/img_doctor_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/doctor"
+            android:scaleType="center"
+            android:contentDescription="Doctor Image"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary_color"
+            android:background="@drawable/round"/>
+
+        <!-- Doctor name -->
+        <TextView
+            android:id="@+id/tv_doctor_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/tv_doctor_specialization_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialization"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contact info -->
+        <TextView
+            android:id="@+id/tv_doctor_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: example@example.com"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_doctor_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9800000000"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Recommended Products title -->
+        <TextView
+            android:id="@+id/tv_recommended_products_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Products"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- RecyclerView for products -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_doctor_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -127,7 +127,7 @@
 
         <!-- Card 2: My Plans -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/specialists"
+            android:id="@+id/doctors"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -147,8 +147,8 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:tint="@color/white"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/baseline_favorite_24"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/doctor"
                     android:layout_marginEnd="8dp" />
 
                 <TextView
@@ -158,7 +158,7 @@
                     android:layout_weight="1"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:text="Recommemded Specialists"
+                    android:text="Doctors"
                     android:textSize="20sp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp" />

@@ -2,6 +2,7 @@ package com.example.skincare.network;
 
 import com.example.skincare.model.ApiResponse;
 import com.example.skincare.model.AuthResponse;
+import com.example.skincare.model.Doctor;
 import com.example.skincare.model.Product;
 import com.example.skincare.requests.LoginRequest;
 import com.example.skincare.requests.RegisterRequest;
@@ -30,5 +31,12 @@ public interface ApiService {
 
     @GET("products/{id}")
     Call<ApiResponse<Product>> getProductDetails(@Path("id") int productId);
+
+    @GET("doctors")
+    Call<ApiResponse<List<Doctor>>> getDoctors(); // fetch all doctors
+
+    @GET("doctors/{id}/products")
+    Call<ApiResponse<List<Product>>> getProductsByDoctor(@Path("id") int doctorId); // fetch products recommended by a doctor
+
 
 }

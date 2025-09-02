@@ -30,7 +30,7 @@ public class Product {
     @SerializedName("recommended_for")
     private String recommendedFor;
 
-    @SerializedName("recommendedByDoctors")
+    @SerializedName("recommended_by_doctors")
     private List<Doctor> recommendedByDoctors;
 
     // ✅ Empty constructor required for Gson
@@ -67,7 +67,10 @@ public class Product {
     public String getIncompatibleProducts() { return incompatibleProducts; }
     public String getImage() { return image; }
     public String getRecommendedFor() { return recommendedFor; }
-    public List<Doctor> getRecommendedByDoctors() { return recommendedByDoctors; }
+    // getter
+    public List<Doctor> getRecommendedByDoctors() {
+        return recommendedByDoctors;
+    }
 
     // Setters
     public void setId(int id) { this.id = id; }

@@ -67,14 +67,13 @@ public class HomePageFragment extends Fragment {
             bundle.putString("image", product.getImage());
             bundle.putString("recommendedFor", product.getRecommendedFor());
 
-            ArrayList<String> doctorNames = new ArrayList<>();
+            // ----------------------- UPDATED -----------------------
+            // Pass doctors as Serializable
+            ArrayList<Doctor> doctorsList = new ArrayList<>();
             List<Doctor> doctors = product.getRecommendedByDoctors();
-            if (doctors != null) {
-                for (Doctor d : doctors) {
-                    doctorNames.add(d.getName());
-                }
-            }
-            bundle.putStringArrayList("recommendedByDoctors", doctorNames);
+            if (doctors != null) doctorsList.addAll(doctors);
+            bundle.putSerializable("recommendedByDoctorsList", doctorsList);
+            // -------------------------------------------------------
 
             ProductDetailsFragment detailsFragment = new ProductDetailsFragment();
             detailsFragment.setArguments(bundle);

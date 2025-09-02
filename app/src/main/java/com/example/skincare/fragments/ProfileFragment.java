@@ -23,7 +23,7 @@ import retrofit2.Response;
 
 public class ProfileFragment extends Fragment {
 
-    private CardView logoutBtn,specialistsCard,skinProfileCard;
+    private CardView logoutBtn,doctorsCard,skinProfileCard;
     public TextView username, text_profile_name, email;
     private PreferenceManager preferenceManager;
 
@@ -42,7 +42,7 @@ public class ProfileFragment extends Fragment {
         text_profile_name = view.findViewById(R.id.text_profile_name);
         email = view.findViewById(R.id.email);
         logoutBtn = view.findViewById(R.id.logoutBtn);
-        specialistsCard = view.findViewById(R.id.specialists);
+        doctorsCard = view.findViewById(R.id.doctors);
         skinProfileCard = view.findViewById(R.id.userProfile);
 
         skinProfileCard.setOnClickListener(v -> {
@@ -53,14 +53,13 @@ public class ProfileFragment extends Fragment {
                     .commit();
         });
         // Set click listener for Specialists Card
-//        specialistsCard.setOnClickListener(v -> {
-//            // Navigate to SpecialistsFragment
-//            SpecialistsFragment specialistsFragment = new SpecialistsFragment();
-//            getParentFragmentManager().beginTransaction()
-//                    .replace(R.id.frameFragmentLayout, specialistsFragment)
-//                    .addToBackStack(null)
-//                    .commit();
-//        });
+        doctorsCard.setOnClickListener(v -> {
+            DoctorsFragment doctorsFragment = new DoctorsFragment();
+            getParentFragmentManager().beginTransaction()
+                    .replace(R.id.frameFragmentLayout, doctorsFragment)
+                    .addToBackStack(null)
+                    .commit();
+        });
 
         // Load saved user info safely
         String savedUsername = preferenceManager.getUsername();
